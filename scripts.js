@@ -21,32 +21,32 @@ function convertvalues() {
         real:1
     },
     dolar: {
-        real: 1/5.04,
-        euro: 1/0.87,
-        bitcoin: 1/0.000166,
-        libra: 1/0.134,
+        real: 5.04,
+        euro: 0.87,
+        bitcoin: 0.000166,
+        libra: 0.134,
         dolar:1
     },
     euro: {
-        real:1/5.87,
-        dolar: 1/0.87,
-        bitcoin: 1/0.000191,
-        libra: 1/0.154,
+        real:5.87,
+        dolar: 0.87,
+        bitcoin: 0.000191,
+        libra: 0.154,
         euro:1
     },
     libra: {
-        real: 1/6.76,
-        dolar: 1/0.134,
-        euro: 1/0.154,
-        bitcoin: 1/0.00121,
+        real: 6.76,
+        dolar: 0.134,
+        euro: 0.154,
+        bitcoin: 0.00121,
         libra:1
 
     },
     bitcoin: {
-        real: 1/383060.54,
-        dolar: 1/0.000166,
-        euro: 1/0.000191,
-        libra: 1/0.00121,
+        real: 383060.54,
+        dolar: 0.000166,
+        euro: 0.000191,
+        libra: 0.00121,
         bitcoin:1
     }
 };
