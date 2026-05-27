@@ -63,20 +63,20 @@ function convertvalues() {
         }).format(valorConvertido)
     }
 
-    if (currencySelect.value === "dolar") {
+    else if (currencySelect.value === "dolar") {
         segundoValo.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
         }).format(valorConvertido)
     }
-    if (currencySelect.value === "euro") {
+    else if (currencySelect.value === "euro") {
         segundoValo.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(valorConvertido)
     }
 
-    if (currencySelect.value === "bitcoin") {
+    else if (currencySelect.value === "bitcoin") {
         segundoValo.innerHTML =
             (valorConvertido).toFixed(8) + " BTC"
     }
