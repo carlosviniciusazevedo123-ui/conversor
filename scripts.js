@@ -6,7 +6,7 @@ const firstCurrencySelect = document.getElementById("primeiroseletor");
 
 function convertvalues() {
 
-    const inputConvertValue = document.getElementById("valor").value
+    const inputConvertValue = number(document.getElementById("valor").value)
 
     const primeiroValo = document.getElementById("primeirovalor")
 
@@ -18,39 +18,50 @@ function convertvalues() {
         euro: 5.87,
         bitcoin: 383060.54,
         libra: 6.76,
-        real:1
+        peso: 0.0036, 
+        real: 1
     },
     dolar: {
         real: 5.04,
         euro: 0.87,
         bitcoin: 0.000166,
         libra: 0.134,
-        dolar:1
+        peso: 0.0024, 
+        dolar: 1
     },
     euro: {
-        real:5.87,
+        real: 5.87,
         dolar: 0.87,
         bitcoin: 0.000191,
         libra: 0.154,
-        euro:1
+        peso: 0.014, 
+        euro: 1
     },
     libra: {
         real: 6.76,
         dolar: 0.134,
         euro: 0.154,
         bitcoin: 0.00121,
-        libra:1
-
+        peso: 0.013, 
+        libra: 1
     },
     bitcoin: {
         real: 383060.54,
         dolar: 0.000166,
         euro: 0.000191,
         libra: 0.00121,
-        bitcoin:1
+        peso: 0.00015, 
+        bitcoin: 1
+    },
+    peso: {
+        real: 83.33, 
+        dolar: 0.0024, 
+        euro: 0.014, 
+        libra: 0.013, 
+        bitcoin: 0.00015, 
+        peso: 1
     }
 };
-
     const originCurrency = firstCurrencySelect.value
     const destinationcurrency = currencySelect.value
     const valorEmReal = inputConvertValue * taxas [originCurrency].real
@@ -60,6 +71,13 @@ function convertvalues() {
         segundoValo.innerHTML = new Intl.NumberFormat("en-GB", {
             style: "currency",
             currency: "GBP"
+        }).format(valorConvertido)
+    }
+
+    else if (currencySelect.value === "peso"){
+        segundoValo.innetHTML = new Intl.NumberFormat("es-AR",{
+            style:"currency",
+            currency:"ARS"
         }).format(valorConvertido)
     }
 
@@ -143,6 +161,16 @@ function changeCurrency() {
     if (currencySelect.value == "libra") {
         currencyChange.innerHTML = "GBP"
         currencyimage.src = "./img/UK.png"
+    }
+
+    if (firstCurrencySelect.value == "peso"){
+        firstCurrencyChange.innerHTML = "ARS"
+        firstCurrencyimage.src="./img/argentina.PNG"
+    }
+
+    if (currencySelect.value == "peso") {
+        currencyChange.innerHTML = "ARS"
+        currencyimage.src = "./img/argentina.png"
     }
 }
 
