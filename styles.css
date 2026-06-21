@@ -106,8 +106,8 @@ button:active{
    
 }
 
-#primeiramoeda,
-#segundamoeda {
+#moeda1,
+#moeda2 {
     font-weight: 700;
     font-size: 14px;
     color: #777777;
@@ -120,7 +120,7 @@ button:active{
     font-weight: 700;
     font-size: 20px;
     color: #555555;
-    text-align: center;
+    
     
 }
 
@@ -128,4 +128,5 @@ button:active{
     width: 35px;
     height: auto;
     align-items: center;
+    display: flex;
 }
