@@ -26,8 +26,7 @@ body {
 #gif {
     width: 200px;
     height: 150px;
-    display: block;
-    margin: 20px auto;
+    
 }
 
 #corpo {
@@ -92,16 +91,19 @@ button:active{
 }
 
 #resultado{
-    border: 1px solid #003366;
+    border: 2px solid #003366;
     border-radius: 20px;
     width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
 }
 #primeiraimg,
 #segundaimg {
     width: 48px;
     height: 48px;
-    display: block;
-    margin: 10px auto;
+   
 }
 
 #primeiramoeda,
@@ -110,8 +112,8 @@ button:active{
     font-size: 14px;
     color: #777777;
     text-align: center;
-    margin: 4px 0 2px;
 }
+    
 
 #primeirovalor,
 #segundovalor {
@@ -119,12 +121,11 @@ button:active{
     font-size: 20px;
     color: #555555;
     text-align: center;
-    margin: 2px 0 15px;
+    
 }
 
 #vetor {
     width: 35px;
     height: auto;
-    display: block;
-    margin: 10px auto;
+    align-items: center;
 }
